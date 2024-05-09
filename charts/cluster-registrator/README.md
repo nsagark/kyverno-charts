@@ -6,10 +6,10 @@ Helm chart for Nirmata Cluster Registrator
 
 ## Description
 
-The Cluster registrator runs a job inside the cluster to register the cluster to NPM. 
+The Cluster registrator runs a job inside the cluster to register the cluster to NPM/NDP.
 Cluster Registrator performs the following steps:
-1. Fetches ClusterType resources from Nirmata. It defaults to `default-policy-manager-type`.
-2. Created a Cluster resource using the `type` and `name` with 0 nodes.
+1. Fetches ClusterType resources from Nirmata. It defaults to `default-policy-manager-type` in NPM.
+2. Creates a Cluster resource using the `type` and `name` with 0 nodes.
 3. Fetches the YAML manifests to register the cluster.
 4. Applies the YAML manifests to create resources and register the cluster.
 
